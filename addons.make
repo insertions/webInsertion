@@ -1,0 +1,3 @@
+ofxAvFoundationHLSPlayer
+ofxGui
+ofxSyphon

@@ -1,0 +1,8 @@
+<group>
+	<fill>1</fill>
+	<radius>140</radius>
+	<center>640, 360</center>
+	<color>100, 100, 140, 162</color>
+	<circle_res>5</circle_res>
+	<textfield:>type sth. here</textfield:>
+</group>
