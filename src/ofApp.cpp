@@ -176,7 +176,8 @@ void ofApp::draw(){
     string videoinfo = videoPlayer.getInfo();
     videoinfo.pop_back();
     info << videoinfo << endl;
-    info << "framerate: " <<ofGetFrameRate() << endl;
+    info << "framerate: " <<ofGetFrameRate() << endl << endl;
+    info << "jeraman.info, 2017" << endl;
     videoinfo = info.str();
 
     /*
