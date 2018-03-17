@@ -13,6 +13,12 @@
 #include <string>
 #include <array>
 
+#define DEFAULT_VIDEO "http://devimages.apple.com.edgekey.net/samplecode/avfoundationMedia/AVFoundationQueuePlayer_HLS2/master.m3u8"
+#define QUALITY_RANGE 5
+#define YOUTUBE_DL_PARAMETER_FOR_LIVE_VIDEO "-g"
+#define YOUTUBE_DL_PARAMETER_FOR_NON_LIVE_VIDEO "--get-url"
+#define INITIAL_LIVE_VIDEO_QUALITY 95
+#define INITIAL_NON_LIVE_VIDEO_QUALITY 18
 
 class ofApp : public ofBaseApp{
 
@@ -33,23 +39,31 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+        void checkSettings();
+    
         void setupGui();
         void setupVideo();
     
         void show_debug_changed(bool &);
         void video_url_changed(string &);
     
-        void load_video();
+        bool load_video();
         void load_video_pressed();
     
-        bool load_url_from_file();
-        void load_m3u8(string);
-        void load_m3u8_from_video_url();
+        bool read_url_from_file();
         void update_video_url(string);
-        string exec(const char* cmd);
+    
+        bool is_live_video(string);
+    
+        string translate_video_url(string, int, string);
+        string translate_live_video_url(string);
+        string translate_non_live_video_url(string);
+        bool load_video_from_url(string);
+        string exec_in_command_line(const char* cmd);
     
         ofxAvFoundationHLSPlayer videoPlayer;
         ofxSyphonServer mainOutputSyphonServer;
+        //ofxSyphonServer ccvSyphonServer;
         //ofTexture tex;
     
         ofxPanel gui;
@@ -58,8 +72,11 @@ class ofApp : public ofBaseApp{
     
         bool hide_video;
         bool debug_info;
+        bool is_loading_video;
     
         string video_url;
+    
+        time_t lastSaveVideoFile;
     
 		
 };

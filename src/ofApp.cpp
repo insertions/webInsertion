@@ -6,32 +6,41 @@
 void ofApp::setup(){
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    //tex.allocate(videoPlayer.getWidth(), videoPlayer.getHeight(), GL_RGBA);
-    //cout << "setup finished! width: " << videoPlayer.getWidth() << " height: " << videoPlayer.getHeight() << endl;
-    
     hide_video = false;
     debug_info = true;
     
     mainOutputSyphonServer.setName("Insertion Output");
+    //ccvSyphonServer.setName("CCV Output");
     
-    setupVideo();
+    bool sucesss = load_video();
+    
+//    if (!sucesss)
+//    {
+//        cout << "some error happened when loading the video file." << endl <<
+//                " please, try to run the software again. exiting now..." << endl;
+//        throw std::exception();
+//    }
+    
     setupGui();
     
     ofSetFrameRate(60);
 }
 
-
 //--------------------------------------------------------------
-//setting up the video
-void ofApp::setupVideo() {
-    load_video();
-
+void ofApp::checkSettings(){
+    boost::filesystem::path filePath = ofToDataPath("video.txt");
+    time_t t = boost::filesystem::last_write_time(filePath);
+    if (t != lastSaveVideoFile) {
+        lastSaveVideoFile = t;
+        load_video();
+    }
 }
+
 
 //--------------------------------------------------------------
 //code retrieved from:
 //http://stackoverflow.com/questions/478898/how-to-execute-a-command-and-get-output-of-command-within-c-using-posix
-string ofApp::exec(const char* cmd) {
+string ofApp::exec_in_command_line(const char* cmd) {
     array<char, 128> buffer;
     string result;
     shared_ptr<FILE> pipe(popen(cmd, "r"), pclose);
@@ -61,8 +70,39 @@ void ofApp::setupGui() {
     gui.setPosition( ofGetWidth() - ui_width - 5, 5);
 }
 
+bool ofApp::is_live_video(string url) {
+    if (url.find("manifest") != std::string::npos)      return true;
+    if (url.find("videoplayback") != std::string::npos) return false;
+    
+    cout << "the URL provided is not a valid youtube video." << endl;
+    throw std::exception();
+}
+
 //--------------------------------------------------------------
-bool ofApp::load_url_from_file() {
+bool ofApp::load_video() {
+    videoPlayer.stop();
+    
+    read_url_from_file();
+    
+    string translated_url = "";
+    
+    //try to load url as a live video
+    translated_url = translate_live_video_url(video_url);
+    
+    //if no results were found for live videos...
+    if (translated_url.empty())
+    // ...try non-live videos
+        translated_url = translate_non_live_video_url(video_url);
+    
+    //if no results were found again, use default video...
+    if (translated_url.empty())
+        translated_url = DEFAULT_VIDEO;
+    
+    return load_video_from_url(translated_url);
+}
+
+//--------------------------------------------------------------
+bool ofApp::read_url_from_file() {
     ofBuffer buffer = ofBufferFromFile("video.txt");
     
     bool result = false;
@@ -82,59 +122,65 @@ bool ofApp::load_url_from_file() {
         
     }
     
+    //updating the last time saved
+    boost::filesystem::path filePath = ofToDataPath("video.txt");
+    lastSaveVideoFile = boost::filesystem::last_write_time(filePath);
+    
     return result;
-
+    
 }
 
 //--------------------------------------------------------------
-void ofApp::load_video() {
-    bool loaded_from_file = load_url_from_file();
-    
-    //trying to load url from file
-    if (loaded_from_file)
-        load_m3u8_from_video_url();
-    
-    //if any error occurred
-    else {
-        string v="https://devimages.apple.com.edgekey.net/samplecode/avfoundationMedia/AVFoundationQueuePlayer_HLS2/master.m3u8";
-        load_m3u8(v);
-    }
+string ofApp::translate_live_video_url(string url){
+    return translate_video_url(url,
+                               INITIAL_LIVE_VIDEO_QUALITY,
+                               YOUTUBE_DL_PARAMETER_FOR_LIVE_VIDEO);
 }
 
+//--------------------------------------------------------------
+string ofApp::translate_non_live_video_url(string url){
+    return translate_video_url(url,
+                               INITIAL_NON_LIVE_VIDEO_QUALITY,
+                               YOUTUBE_DL_PARAMETER_FOR_NON_LIVE_VIDEO);
+}
 
 //--------------------------------------------------------------
-void ofApp::load_m3u8_from_video_url() {
+string ofApp::translate_video_url(string url, int quality, string parameter){
     
-    int quality = 95;
-    string var_video_m3u8 = "";
+    //int quality = INITIAL_VIDEO_QUALITY;
+    string translated_url = "";
+    int quality_limit = quality - QUALITY_RANGE;
     
     //if quality 95 is too high...
-    while (var_video_m3u8.empty()) {
+    while (translated_url.empty() && quality >= quality_limit) {
         stringstream cmd;
         //formats the command as a string
-        cmd << "/usr/local/bin/youtube-dl -f " << quality <<" -g "  << video_url;
+        //cmd << "/usr/local/bin/youtube-dl -f " << quality <<" -g "  << url;
+        cmd << "/usr/local/bin/youtube-dl -f " << quality << " " << parameter << " " << url;
+        
         //tries to execute the command
-        var_video_m3u8 = exec(cmd.str().c_str());
-        var_video_m3u8.pop_back();
+        translated_url = exec_in_command_line(cmd.str().c_str());
+        translated_url.pop_back();
         
         //if the video is not empty
-        if (!var_video_m3u8.empty())
+        if (!translated_url.empty())
             //tries to find the last occurrence of https (the valid one)
-            var_video_m3u8 = var_video_m3u8.substr(var_video_m3u8.rfind("https://"), var_video_m3u8.size());
+            translated_url = translated_url.substr(translated_url.rfind("https://"), translated_url.size());
         
         quality--;
     }
     
-    //load the m3u8 video
-    load_m3u8(var_video_m3u8);
+    if (translated_url.empty())
+        return "";
+    else
+        return translated_url;
 }
 
 //--------------------------------------------------------------
-void ofApp::load_m3u8(string var_video_m3u8) {
-    videoPlayer.stop();
-    videoPlayer = *(new ofxAvFoundationHLSPlayer());
-    videoPlayer.load(var_video_m3u8);
-    cout << "video loaded! " << endl;
+bool ofApp::load_video_from_url(string var_video) {
+    //videoPlayer = *(new ofxAvFoundationHLSPlayer());
+    bool success = videoPlayer.load(var_video);
+    return success;
 }
 
 //--------------------------------------------------------------
@@ -158,19 +204,20 @@ void ofApp::video_url_changed(string & value) {
 
 //--------------------------------------------------------------
 void ofApp::load_video_pressed() {
-    //load_url_from_file();
-    load_video();
-    cout << "load_video_pressed!"<< endl;
+    ofSystem("open "+ofToDataPath("video.txt"));
+    cout << "opening video.txt file..." << endl;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    if (ofGetFrameNum() % 30 == 0) {
+        checkSettings();
+    }
     videoPlayer.update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    
     stringstream info;
     info << "URL: " << video_url<< endl << endl;
     string videoinfo = videoPlayer.getInfo();
@@ -180,14 +227,13 @@ void ofApp::draw(){
     info << "jeraman.info, 2017" << endl;
     videoinfo = info.str();
 
-    /*
     //getting the texture
-    tex = videoPlayer.getTexture();
+    //tex = videoPlayer.getTexture();
     //drawing the texture into the screen
-    tex.draw(0, 0, ofGetWidth(), ofGetHeight());
+    //tex.draw(0, 0, ofGetWidth(), ofGetHeight());
     //sending the texture via syphon
-    mainOutputSyphonServer.publishTexture(&tex);
-     */
+    //ccvSyphonServer.publishTexture(&tex);
+    
     
     int xpos = (int) (ofGetWidth()/2)-175;
     int ypos = (int) (ofGetHeight()/2)-25;
@@ -206,6 +252,7 @@ void ofApp::draw(){
     }
     
     mainOutputSyphonServer.publishScreen();
+    //ccvSyphonServer.publishScreen();
     
     gui.draw();
 }
