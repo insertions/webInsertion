@@ -9,6 +9,8 @@ void ofApp::setup(){
     hide_video = false;
     debug_info = true;
     
+    video_quality_offset = 0;
+    
     mainOutputSyphonServer.setName("Insertion Output");
     //ccvSyphonServer.setName("CCV Output");
     
@@ -133,21 +135,21 @@ bool ofApp::read_url_from_file() {
 //--------------------------------------------------------------
 string ofApp::translate_live_video_url(string url){
     return translate_video_url(url,
-                               INITIAL_LIVE_VIDEO_QUALITY,
+                               INITIAL_LIVE_VIDEO_QUALITY+video_quality_offset,
                                YOUTUBE_DL_PARAMETER_FOR_LIVE_VIDEO);
 }
 
 //--------------------------------------------------------------
 string ofApp::translate_non_live_video_url(string url){
     return translate_video_url(url,
-                               INITIAL_NON_LIVE_VIDEO_QUALITY,
+                               INITIAL_NON_LIVE_VIDEO_QUALITY+video_quality_offset,
                                YOUTUBE_DL_PARAMETER_FOR_NON_LIVE_VIDEO);
 }
 
 //--------------------------------------------------------------
 string ofApp::translate_video_url(string url, int quality, string parameter){
     
-    //int quality = INITIAL_VIDEO_QUALITY;
+    video_quality = quality;
     string translated_url = "";
     int quality_limit = quality - QUALITY_RANGE;
     
@@ -224,6 +226,7 @@ void ofApp::draw(){
     videoinfo.pop_back();
     info << videoinfo << endl;
     info << "framerate: " <<ofGetFrameRate() << endl;
+    info << "video quality: " << video_quality << endl;
     info << "resolution: " <<ofGetWidth() << "x" << ofGetHeight() << endl << endl;
     info << "jeraman.info, 2017" << endl;
     videoinfo = info.str();
@@ -272,6 +275,14 @@ void ofApp::keyPressed(int key){
     }
     else if(key == 'l'){
         gui.loadFromFile("settings.xml");
+    }
+    else if(key == '['){
+        video_quality_offset--;
+        load_video();
+    }
+    else if(key == ']'){
+        video_quality_offset++;
+        load_video();
     }
 }
 

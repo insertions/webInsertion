@@ -4,7 +4,6 @@
 #include "ofxAvFoundationHLSPlayer.h"
 #include "ofxSyphon.h"
 #include "ofxGui.h"
-#include "ofxInputField.h"
 
 #include <cstdio>
 #include <iostream>
@@ -73,6 +72,9 @@ class ofApp : public ofBaseApp{
         bool hide_video;
         bool debug_info;
         bool is_loading_video;
+    
+        int video_quality_offset;
+        int video_quality;
     
         string video_url;
     
