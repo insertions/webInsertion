@@ -62,25 +62,18 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>C8C1E2DA749C91543633D052</key>
-			<dict>
-				<key>fileRef</key>
-				<string>C31DA1FB8FBC64F6403A8D5F</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>C31DA1FB8FBC64F6403A8D5F</key>
+			<key>6224E39933F5DFFBABB132F2</key>
 			<dict>
 				<key>explicitFileType</key>
-				<string>sourcecode.cpp.objcpp</string>
+				<string>sourcecode.c.h</string>
 				<key>fileEncoding</key>
 				<string>30</string>
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>SyphonNameboundClient.m</string>
+				<string>SyphonNameboundClient.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.m</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -88,8 +81,8 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>6224E39933F5DFFBABB132F2</string>
 					<string>C31DA1FB8FBC64F6403A8D5F</string>
+					<string>6224E39933F5DFFBABB132F2</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -125,7 +118,29 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>6224E39933F5DFFBABB132F2</key>
+			<key>C8C1E2DA749C91543633D052</key>
+			<dict>
+				<key>fileRef</key>
+				<string>C31DA1FB8FBC64F6403A8D5F</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>C31DA1FB8FBC64F6403A8D5F</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.objcpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>SyphonNameboundClient.m</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.m</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>A480772D868AD019B3C0092C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -134,9 +149,24 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>SyphonNameboundClient.h</string>
+				<string>ofxSyphonServerDirectory.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>6B5B9F9538D48A832B11F64B</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSyphonClient.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonClient.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -162,7 +192,29 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A480772D868AD019B3C0092C</key>
+			<key>5AAFBB19F2E1CFE4EAF34800</key>
+			<dict>
+				<key>fileRef</key>
+				<string>B4B1212E6A654B4A914353FD</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>B4B1212E6A654B4A914353FD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.objcpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSyphonClient.mm</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonClient.mm</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>E07DF58860F6BDA68B091697</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -171,9 +223,9 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxSyphonServerDirectory.h</string>
+				<string>ofxSyphonServer.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonServerDirectory.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonServer.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -199,69 +251,17 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E07DF58860F6BDA68B091697</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSyphonServer.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonServer.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>5AAFBB19F2E1CFE4EAF34800</key>
-			<dict>
-				<key>fileRef</key>
-				<string>B4B1212E6A654B4A914353FD</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>B4B1212E6A654B4A914353FD</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.cpp.objcpp</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSyphonClient.mm</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonClient.mm</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>6B5B9F9538D48A832B11F64B</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxSyphonClient.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src/ofxSyphonClient.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
 			<key>49A9E39C52C2DF4DDA1E185F</key>
 			<dict>
 				<key>children</key>
 				<array>
 					<string>42CD61AF67A5B6A297E8566A</string>
-					<string>6B5B9F9538D48A832B11F64B</string>
-					<string>B4B1212E6A654B4A914353FD</string>
-					<string>E07DF58860F6BDA68B091697</string>
 					<string>C520B87C6689990D854FBEEC</string>
-					<string>A480772D868AD019B3C0092C</string>
+					<string>E07DF58860F6BDA68B091697</string>
+					<string>B4B1212E6A654B4A914353FD</string>
 					<string>E6D0E73C52BE9E7F3E6D81B9</string>
+					<string>6B5B9F9538D48A832B11F64B</string>
+					<string>A480772D868AD019B3C0092C</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -299,7 +299,7 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7B3741305442DA1A2180E68B</key>
+			<key>7C90ACC031B7B888DFEFF0CA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -308,20 +308,20 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxToggle.h</string>
+				<string>NetworkingUtils.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxToggle.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1577A85191CF804E448EF2EF</key>
+			<key>F4F23EEAD9A3D45404EE8B45</key>
 			<dict>
 				<key>fileRef</key>
-				<string>26B5A5DA63676DBF7574FF7A</string>
+				<string>ACECE83C0FE8CA342EF98B44</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>26B5A5DA63676DBF7574FF7A</key>
+			<key>ACECE83C0FE8CA342EF98B44</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -330,13 +330,13 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxToggle.cpp</string>
+				<string>IpEndpointName.cpp</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxToggle.cpp</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>67FCB6E1D3D21D37FCCC658C</key>
+			<key>2D7BDA0EE0B8B1870BD4A7B6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -345,20 +345,65 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxSliderGroup.h</string>
+				<string>IpEndpointName.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSliderGroup.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>2657E3352943F17DC16E21AC</key>
+			<key>7E19FE4724897C079EDF2C44</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>PacketListener.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>FC4D81DFB2371BDCC7BCDFB6</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>TimerListener.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/TimerListener.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>1D4A7893010FF80D27E46C35</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>UdpSocket.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>376B349074EF937DC902961E</key>
 			<dict>
 				<key>fileRef</key>
-				<string>EB7C1A4EB8FE3187815D9745</string>
+				<string>86A75E70D7935587AD7CE139</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>EB7C1A4EB8FE3187815D9745</key>
+			<key>86A75E70D7935587AD7CE139</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -367,13 +412,68 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxSliderGroup.cpp</string>
+				<string>UdpSocket.cpp</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSliderGroup.cpp</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1C933452DB8730FB9E6191DC</key>
+			<key>641362CA659FAFEE4E81001B</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>1F3669ACEF686BCD0D2C5F3E</string>
+					<string>86A75E70D7935587AD7CE139</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>posix</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>FF8CDF57858E9B94E3237115</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>641362CA659FAFEE4E81001B</string>
+					<string>1D4A7893010FF80D27E46C35</string>
+					<string>FC4D81DFB2371BDCC7BCDFB6</string>
+					<string>7E19FE4724897C079EDF2C44</string>
+					<string>2D7BDA0EE0B8B1870BD4A7B6</string>
+					<string>ACECE83C0FE8CA342EF98B44</string>
+					<string>7C90ACC031B7B888DFEFF0CA</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ip</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>E486038A5BA21A5835BF41FC</key>
+			<dict>
+				<key>fileRef</key>
+				<string>1F3669ACEF686BCD0D2C5F3E</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>1F3669ACEF686BCD0D2C5F3E</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>NetworkingUtils.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>DDEF862D062B4E3960F5E56F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -382,9 +482,534 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxSlider.h</string>
+				<string>OscTypes.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSlider.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>5B63375C4622E161046998A0</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscReceivedElements.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>CDC8E0062206733074C6D463</key>
+			<dict>
+				<key>fileRef</key>
+				<string>29E4423AE7FADA6A04B6760A</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>29E4423AE7FADA6A04B6760A</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscPrintReceivedElements.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>9EB4513EF30965F968E62C58</key>
+			<dict>
+				<key>fileRef</key>
+				<string>3599B499431FC9080D5C6A09</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>3599B499431FC9080D5C6A09</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscReceivedElements.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>7A8C3E221312E79AF2941ECD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscOutboundPacketStream.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>13A2991C0AAE27648D5ECA4B</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscException.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscException.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>76983E70D01400A5BE314768</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscHostEndianness.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>F27C9E5B52D52F5ADE3C6CEB</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>MessageMappingOscPacketListener.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>548FDEAB9DEB66EB3E65BE4F</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscPrintReceivedElements.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>12ACCD42640F12913E0BDD5D</key>
+			<dict>
+				<key>fileRef</key>
+				<string>06CD20FC3E3A81BD7FBCB380</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>06CD20FC3E3A81BD7FBCB380</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscTypes.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>EE83CA1F170F53DFF693F707</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscPacketListener.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>30CB364908817057B430D528</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>ACC03953A38F935EC86365ED</string>
+					<string>EE83CA1F170F53DFF693F707</string>
+					<string>06CD20FC3E3A81BD7FBCB380</string>
+					<string>548FDEAB9DEB66EB3E65BE4F</string>
+					<string>F27C9E5B52D52F5ADE3C6CEB</string>
+					<string>76983E70D01400A5BE314768</string>
+					<string>13A2991C0AAE27648D5ECA4B</string>
+					<string>7A8C3E221312E79AF2941ECD</string>
+					<string>3599B499431FC9080D5C6A09</string>
+					<string>29E4423AE7FADA6A04B6760A</string>
+					<string>5B63375C4622E161046998A0</string>
+					<string>DDEF862D062B4E3960F5E56F</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>osc</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>D27B2221A225CA523C019676</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>30CB364908817057B430D528</string>
+					<string>FF8CDF57858E9B94E3237115</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>86D2677079A3AF4A5A88E29A</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>D27B2221A225CA523C019676</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>oscpack</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>38871A5825686AE018EC2BF0</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>86D2677079A3AF4A5A88E29A</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>libs</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>A2D829BF8A25FBD8080FEDD5</key>
+			<dict>
+				<key>fileRef</key>
+				<string>ACC03953A38F935EC86365ED</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>ACC03953A38F935EC86365ED</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>OscOutboundPacketStream.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>945AFBE5F2504CBF88D5E159</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscSender.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscSender.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>D0A09B55AA7C8CCC26F12565</key>
+			<dict>
+				<key>fileRef</key>
+				<string>3A938918FFC3F0978E9D99CE</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>3A938918FFC3F0978E9D99CE</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscSender.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscSender.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>94B3B7B2FB0F5E43920F718F</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscBundle.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscBundle.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>BCF044F2292937D81D73FD67</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscMessage.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscMessage.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>37C4F8E5BCD3FCBBE50549EF</key>
+			<dict>
+				<key>fileRef</key>
+				<string>7522637CDA5FB59E79721781</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>7522637CDA5FB59E79721781</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscReceiver.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscReceiver.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>0A3758B62A4BF877C5A6B676</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscArg.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscArg.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>3BE1B6EC96BADA5E59F5453A</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscReceiver.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscReceiver.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>19E9C0734FFE69416AC73EDF</key>
+			<dict>
+				<key>fileRef</key>
+				<string>347E1FCD54DAE9F7BF88972A</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>347E1FCD54DAE9F7BF88972A</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscBundle.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscBundle.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>E7E58CFDC87239CE5B64765A</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOsc.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOsc.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>125F42A183043E0140D35B4F</key>
+			<dict>
+				<key>fileRef</key>
+				<string>C9BB4AF2F61CAD7F00821D93</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>C9BB4AF2F61CAD7F00821D93</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscMessage.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscMessage.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>B23A43D9CD8E1740E695A0C6</key>
+			<dict>
+				<key>fileRef</key>
+				<string>3A077E09F90F6511195A4180</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>3A077E09F90F6511195A4180</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscParameterSync.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscParameterSync.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>BD2F1A9F8D0C05EDB29122D0</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>5D499980CAA8FC72084B3177</string>
+					<string>3A077E09F90F6511195A4180</string>
+					<string>C9BB4AF2F61CAD7F00821D93</string>
+					<string>E7E58CFDC87239CE5B64765A</string>
+					<string>347E1FCD54DAE9F7BF88972A</string>
+					<string>3BE1B6EC96BADA5E59F5453A</string>
+					<string>0A3758B62A4BF877C5A6B676</string>
+					<string>7522637CDA5FB59E79721781</string>
+					<string>BCF044F2292937D81D73FD67</string>
+					<string>94B3B7B2FB0F5E43920F718F</string>
+					<string>3A938918FFC3F0978E9D99CE</string>
+					<string>945AFBE5F2504CBF88D5E159</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>E6053AB7FEC63D5F83825B88</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>BD2F1A9F8D0C05EDB29122D0</string>
+					<string>38871A5825686AE018EC2BF0</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxOsc</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>5D499980CAA8FC72084B3177</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxOscParameterSync.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src/ofxOscParameterSync.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>D69158D602AAC48D14486A5D</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxPanel.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxPanel.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -410,21 +1035,6 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D69158D602AAC48D14486A5D</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxPanel.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxPanel.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
 			<key>3AAE489950C93F4C97880C2F</key>
 			<dict>
 				<key>fileRef</key>
@@ -447,6 +1057,36 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
+			<key>67FCB6E1D3D21D37FCCC658C</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSliderGroup.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSliderGroup.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>BB84D84B87524CD9A81F81B0</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxInputField.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxInputField.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>F669EEB21B8046DED3393C8D</key>
 			<dict>
 				<key>explicitFileType</key>
@@ -459,6 +1099,66 @@
 				<string>ofxLabel.h</string>
 				<key>path</key>
 				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxLabel.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>FB7032DFAF103D685973320C</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxButton.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxButton.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>7E590BFD0D487EF9A87AA1E9</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxBaseGui.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxBaseGui.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>FC89CBDC0052440C9179994F</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxGui.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGui.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>1C933452DB8730FB9E6191DC</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>ofxSlider.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSlider.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -484,7 +1184,7 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>BB84D84B87524CD9A81F81B0</key>
+			<key>7B3741305442DA1A2180E68B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -493,9 +1193,9 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxInputField.h</string>
+				<string>ofxToggle.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxInputField.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxToggle.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -521,21 +1221,6 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>705A2CA7CA88D8FA10528F50</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxGuiGroup.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGuiGroup.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
 			<key>8576995EA996995197D76B8D</key>
 			<dict>
 				<key>fileRef</key>
@@ -555,36 +1240,6 @@
 				<string>ofxGuiGroup.cpp</string>
 				<key>path</key>
 				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGuiGroup.cpp</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>FC89CBDC0052440C9179994F</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxGui.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGui.h</string>
-				<key>sourceTree</key>
-				<string>SOURCE_ROOT</string>
-			</dict>
-			<key>FB7032DFAF103D685973320C</key>
-			<dict>
-				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
-				<key>fileEncoding</key>
-				<string>30</string>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>name</key>
-				<string>ofxButton.h</string>
-				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxButton.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -610,64 +1265,49 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7E590BFD0D487EF9A87AA1E9</key>
+			<key>1577A85191CF804E448EF2EF</key>
+			<dict>
+				<key>fileRef</key>
+				<string>26B5A5DA63676DBF7574FF7A</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>26B5A5DA63676DBF7574FF7A</key>
 			<dict>
 				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
+				<string>sourcecode.cpp.cpp</string>
 				<key>fileEncoding</key>
 				<string>30</string>
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxBaseGui.h</string>
+				<string>ofxToggle.cpp</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxBaseGui.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxToggle.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A763ED608B35AE3310251DEE</key>
+			<key>2657E3352943F17DC16E21AC</key>
 			<dict>
-				<key>children</key>
-				<array>
-					<string>519F849E8497C7D77E3066DF</string>
-					<string>7E590BFD0D487EF9A87AA1E9</string>
-					<string>8B5320A1FF1D27BBD21CF3B6</string>
-					<string>FB7032DFAF103D685973320C</string>
-					<string>FC89CBDC0052440C9179994F</string>
-					<string>1E39D68B0D6A13C8D08FC5E2</string>
-					<string>705A2CA7CA88D8FA10528F50</string>
-					<string>09780351043CCD5166E43B7C</string>
-					<string>BB84D84B87524CD9A81F81B0</string>
-					<string>244C31EEA32FE6CD53F49539</string>
-					<string>F669EEB21B8046DED3393C8D</string>
-					<string>855892090FD7F7A06530229B</string>
-					<string>D69158D602AAC48D14486A5D</string>
-					<string>0ADAB3DAB708E890ABF930C6</string>
-					<string>1C933452DB8730FB9E6191DC</string>
-					<string>EB7C1A4EB8FE3187815D9745</string>
-					<string>67FCB6E1D3D21D37FCCC658C</string>
-					<string>26B5A5DA63676DBF7574FF7A</string>
-					<string>7B3741305442DA1A2180E68B</string>
-				</array>
+				<key>fileRef</key>
+				<string>EB7C1A4EB8FE3187815D9745</string>
 				<key>isa</key>
-				<string>PBXGroup</string>
-				<key>name</key>
-				<string>src</string>
-				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
+				<string>PBXBuildFile</string>
 			</dict>
-			<key>480A780D8D0308AE4A368801</key>
+			<key>EB7C1A4EB8FE3187815D9745</key>
 			<dict>
-				<key>children</key>
-				<array>
-					<string>A763ED608B35AE3310251DEE</string>
-				</array>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
 				<key>isa</key>
-				<string>PBXGroup</string>
+				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxGui</string>
+				<string>ofxSliderGroup.cpp</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxSliderGroup.cpp</string>
 				<key>sourceTree</key>
-				<string>&lt;group&gt;</string>
+				<string>SOURCE_ROOT</string>
 			</dict>
 			<key>0B31CA9AA632E530B39A7B00</key>
 			<dict>
@@ -691,25 +1331,77 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C832DE9F0C0A72641C3DFF77</key>
+			<key>A763ED608B35AE3310251DEE</key>
 			<dict>
-				<key>fileRef</key>
-				<string>76B42D5D8D7EB6D96E2D8895</string>
+				<key>children</key>
+				<array>
+					<string>705A2CA7CA88D8FA10528F50</string>
+					<string>519F849E8497C7D77E3066DF</string>
+					<string>EB7C1A4EB8FE3187815D9745</string>
+					<string>26B5A5DA63676DBF7574FF7A</string>
+					<string>8B5320A1FF1D27BBD21CF3B6</string>
+					<string>1E39D68B0D6A13C8D08FC5E2</string>
+					<string>09780351043CCD5166E43B7C</string>
+					<string>7B3741305442DA1A2180E68B</string>
+					<string>244C31EEA32FE6CD53F49539</string>
+					<string>1C933452DB8730FB9E6191DC</string>
+					<string>FC89CBDC0052440C9179994F</string>
+					<string>7E590BFD0D487EF9A87AA1E9</string>
+					<string>FB7032DFAF103D685973320C</string>
+					<string>F669EEB21B8046DED3393C8D</string>
+					<string>BB84D84B87524CD9A81F81B0</string>
+					<string>67FCB6E1D3D21D37FCCC658C</string>
+					<string>855892090FD7F7A06530229B</string>
+					<string>0ADAB3DAB708E890ABF930C6</string>
+					<string>D69158D602AAC48D14486A5D</string>
+				</array>
 				<key>isa</key>
-				<string>PBXBuildFile</string>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>src</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
 			</dict>
-			<key>76B42D5D8D7EB6D96E2D8895</key>
+			<key>480A780D8D0308AE4A368801</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>A763ED608B35AE3310251DEE</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>ofxGui</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>705A2CA7CA88D8FA10528F50</key>
 			<dict>
 				<key>explicitFileType</key>
-				<string>sourcecode.cpp.objcpp</string>
+				<string>sourcecode.c.h</string>
 				<key>fileEncoding</key>
 				<string>30</string>
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>ofxAvFoundationHLSPlayer.mm</string>
+				<string>ofxGuiGroup.h</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src/ofxAvFoundationHLSPlayer.mm</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src/ofxGuiGroup.h</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>3B212576A8983C466C618344</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>AVFPlayer.h</string>
+				<key>path</key>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src/AVFPlayer.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -754,10 +1446,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>3B212576A8983C466C618344</string>
+					<string>76B42D5D8D7EB6D96E2D8895</string>
 					<string>3272908DAF5EC5B6EA200831</string>
 					<string>647E1A741DCF8D07A29745F0</string>
-					<string>76B42D5D8D7EB6D96E2D8895</string>
+					<string>3B212576A8983C466C618344</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -779,18 +1471,25 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>3B212576A8983C466C618344</key>
+			<key>C832DE9F0C0A72641C3DFF77</key>
+			<dict>
+				<key>fileRef</key>
+				<string>76B42D5D8D7EB6D96E2D8895</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>76B42D5D8D7EB6D96E2D8895</key>
 			<dict>
 				<key>explicitFileType</key>
-				<string>sourcecode.c.h</string>
+				<string>sourcecode.cpp.objcpp</string>
 				<key>fileEncoding</key>
 				<string>30</string>
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>AVFPlayer.h</string>
+				<string>ofxAvFoundationHLSPlayer.mm</string>
 				<key>path</key>
-				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src/AVFPlayer.h</string>
+				<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src/ofxAvFoundationHLSPlayer.mm</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -811,6 +1510,7 @@
 				<array>
 					<string>344437EDAD6718F9FD023232</string>
 					<string>480A780D8D0308AE4A368801</string>
+					<string>E6053AB7FEC63D5F83825B88</string>
 					<string>7F3C04577424427D348B1425</string>
 				</array>
 				<key>isa</key>
@@ -965,8 +1665,17 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib</string>
@@ -1030,8 +1739,17 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib</string>
@@ -1094,19 +1812,31 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>A9804687BD6FA59C942B6282</string>
 					<string>C832DE9F0C0A72641C3DFF77</string>
+					<string>A9804687BD6FA59C942B6282</string>
 					<string>0B31CA9AA632E530B39A7B00</string>
+					<string>2657E3352943F17DC16E21AC</string>
+					<string>1577A85191CF804E448EF2EF</string>
 					<string>E3535A47D5529963154881FA</string>
 					<string>8576995EA996995197D76B8D</string>
 					<string>FD7CD36BA032B218E47DCD81</string>
 					<string>89F09A27CC6711868D70ABB2</string>
 					<string>3AAE489950C93F4C97880C2F</string>
 					<string>6509242C4B16871C14F11C0D</string>
-					<string>2657E3352943F17DC16E21AC</string>
-					<string>1577A85191CF804E448EF2EF</string>
-					<string>5AAFBB19F2E1CFE4EAF34800</string>
+					<string>B23A43D9CD8E1740E695A0C6</string>
+					<string>125F42A183043E0140D35B4F</string>
+					<string>19E9C0734FFE69416AC73EDF</string>
+					<string>37C4F8E5BCD3FCBBE50549EF</string>
+					<string>D0A09B55AA7C8CCC26F12565</string>
+					<string>A2D829BF8A25FBD8080FEDD5</string>
+					<string>12ACCD42640F12913E0BDD5D</string>
+					<string>9EB4513EF30965F968E62C58</string>
+					<string>CDC8E0062206733074C6D463</string>
+					<string>E486038A5BA21A5835BF41FC</string>
+					<string>376B349074EF937DC902961E</string>
+					<string>F4F23EEAD9A3D45404EE8B45</string>
 					<string>3839513AEA5C1D208BDCF71D</string>
+					<string>5AAFBB19F2E1CFE4EAF34800</string>
 					<string>8C12D4036511BBE056CFF30A</string>
 					<string>C8C1E2DA749C91543633D052</string>
 				</array>
@@ -1193,8 +1923,17 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib</string>
@@ -1249,8 +1988,17 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/libs/oscpack/src/osc</string>
+						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxOsc/src</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon</string>
 						<string>../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib</string>

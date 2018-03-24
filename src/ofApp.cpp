@@ -8,6 +8,7 @@ void ofApp::setup(){
     
     hide_video = false;
     debug_info = true;
+    face_tracking = true;
     
     video_quality_offset = 0;
     
@@ -24,6 +25,11 @@ void ofApp::setup(){
 //    }
     
     setupGui();
+    
+    cout << "listening for osc messages on port " << PORT << "\n";
+    receiver.setup(PORT);
+    
+    face_overlay.load("demo.png");
     
     ofSetFrameRate(60);
 }
@@ -129,7 +135,6 @@ bool ofApp::read_url_from_file() {
     lastSaveVideoFile = boost::filesystem::last_write_time(filePath);
     
     return result;
-    
 }
 
 //--------------------------------------------------------------
@@ -212,10 +217,106 @@ void ofApp::load_video_pressed() {
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    if (ofGetFrameNum() % 30 == 0) {
+    if (ofGetFrameNum() % 30 == 0)
         checkSettings();
-    }
+    
+    if (ofGetFrameNum() % 600 == 0)
+        results_face.clear();
+    
     videoPlayer.update();
+    
+    if (face_tracking)
+        update_OSC_messages();
+    
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::update_OSC_messages() {
+    int i = 0;
+    
+    // check for waiting messages
+    while(receiver.hasWaitingMessages()){
+    //if(receiver.hasWaitingMessages()){
+        // get the next message
+        ofxOscMessage m;
+        receiver.getNextMessage(m);
+        
+        //cout << m.getAddress() << endl;
+        
+        if (m.getAddress() == "/face") {
+            int id = m.getArgAsInt(0);
+            
+            float x  = m.getArgAsFloat(1);
+            float y  = m.getArgAsFloat(2);
+            float w  = m.getArgAsFloat(3);
+            float h  = m.getArgAsFloat(4);
+            
+            if (results_face.size() > i)
+                results_face.erase(results_face.begin()+i);
+            
+            results_face.insert(results_face.begin()+i, ofRectangle(x, y, w, h));
+
+        }
+        
+        i++;
+        /*
+         // check for mouse moved message
+         if(m.getAddress() == "/mouse/position"){
+         // both the arguments are int32's
+         mouseX = m.getArgAsInt32(0);
+         mouseY = m.getArgAsInt32(1);
+         }
+         // check for mouse button message
+         else if(m.getAddress() == "/mouse/button"){
+         // the single argument is a string
+         mouseButtonState = m.getArgAsString(0);
+         }
+         // check for an image being sent (note: the size of the image depends greatly on your network buffer sizes - if an image is too big the message won't come through )
+         else if(m.getAddress() == "/image" ){
+         ofBuffer buffer = m.getArgAsBlob(0);
+         receivedImage.load(buffer);
+         }
+         else{
+         // unrecognized message: display on the bottom of the screen
+         string msg_string;
+         msg_string = m.getAddress();
+         msg_string += ": ";
+         for(int i = 0; i < m.getNumArgs(); i++){
+         // get the argument type
+         msg_string += m.getArgTypeName(i);
+         msg_string += ":";
+         // display the argument - make sure we get the right type
+         if(m.getArgType(i) == OFXOSC_TYPE_INT32){
+         msg_string += ofToString(m.getArgAsInt32(i));
+         }
+         else if(m.getArgType(i) == OFXOSC_TYPE_FLOAT){
+         msg_string += ofToString(m.getArgAsFloat(i));
+         }
+         else if(m.getArgType(i) == OFXOSC_TYPE_STRING){
+         msg_string += m.getArgAsString(i);
+         }
+         else{
+         msg_string += "unknown";
+         }
+         }
+         // add to the list of strings to display
+         msg_strings[current_msg_string] = msg_string;
+         timers[current_msg_string] = ofGetElapsedTimef() + 5.0f;
+         current_msg_string = (current_msg_string + 1) % NUM_MSG_STRINGS;
+         // clear the next line
+         msg_strings[current_msg_string] = "";
+         }
+         */
+        
+    }
+    
+    
+    
+//    ofxOscMessage m;
+//    while(receiver.hasWaitingMessages())
+//        receiver.getNextMessage(m);
+    
 }
 
 //--------------------------------------------------------------
@@ -255,6 +356,32 @@ void ofApp::draw(){
         ofDrawBitmapStringHighlight("insertions into mediatic circuits. test 1", xpos, ypos, ofColor(ofColor::black, 90), ofColor::yellow);
     }
     
+    
+    if (face_tracking) {
+        ofPushStyle();
+        ofNoFill();
+        ofSetLineWidth(2);
+        
+        for(int i = 0; i < results_face.size(); i++) {
+            ofRectangle face(results_face[i].getX()*ofGetWidth(),
+                             results_face[i].getY()*ofGetHeight(),
+                             results_face[i].getWidth()*ofGetWidth(),
+                             results_face[i].getHeight()*ofGetHeight());
+            //ofDrawRectangle(face);
+            //ofDrawBitmapStringHighlight(ofToString(i), face.getPosition());
+            
+            int x = (results_face[i].getX()*ofGetWidth());
+            int y = (results_face[i].getY()*ofGetHeight());
+            int w = (results_face[i].getWidth() * 3 * face_overlay.getWidth());
+            int h = (results_face[i].getHeight() * 3 * face_overlay.getHeight());
+            face_overlay.draw(x, y, w, h);
+        }
+        
+        ofPopStyle();
+    }
+    
+    
+    
     mainOutputSyphonServer.publishScreen();
     //ccvSyphonServer.publishScreen();
     
@@ -284,6 +411,8 @@ void ofApp::keyPressed(int key){
         video_quality_offset++;
         load_video();
     }
+    else if(key == 'f')
+         face_tracking = !face_tracking;
 }
 
 //--------------------------------------------------------------

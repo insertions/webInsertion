@@ -4,6 +4,7 @@
 #include "ofxAvFoundationHLSPlayer.h"
 #include "ofxSyphon.h"
 #include "ofxGui.h"
+#include "ofxOsc.h"
 
 #include <cstdio>
 #include <iostream>
@@ -18,6 +19,9 @@
 #define YOUTUBE_DL_PARAMETER_FOR_NON_LIVE_VIDEO "--get-url"
 #define INITIAL_LIVE_VIDEO_QUALITY 95
 #define INITIAL_NON_LIVE_VIDEO_QUALITY 18
+
+#define PORT 6448
+#define NUM_MSG_STRINGS 20
 
 class ofApp : public ofBaseApp{
 
@@ -52,6 +56,8 @@ class ofApp : public ofBaseApp{
         bool read_url_from_file();
         void update_video_url(string);
     
+        void update_OSC_messages();
+    
         bool is_live_video(string);
     
         string translate_video_url(string, int, string);
@@ -64,6 +70,9 @@ class ofApp : public ofBaseApp{
         ofxSyphonServer mainOutputSyphonServer;
         //ofxSyphonServer ccvSyphonServer;
         //ofTexture tex;
+        ofxOscReceiver receiver;
+    
+        vector<ofRectangle> results_face;
     
         ofxPanel gui;
         ofxToggle show_debug_tgl;
@@ -71,12 +80,15 @@ class ofApp : public ofBaseApp{
     
         bool hide_video;
         bool debug_info;
+        bool face_tracking;
         bool is_loading_video;
     
         int video_quality_offset;
         int video_quality;
     
         string video_url;
+    
+        ofImage face_overlay;
     
         time_t lastSaveVideoFile;
     
